@@ -20,3 +20,14 @@ region_cluster_new_dataset.pkl
 .claude/
 AGENTS.md
 Отчеты/
+# CocoIndex Code (ccc)
+/.cocoindex_code/
+.claude/settings.local.json
+
+# GMM archive (superseded / exploratory research, not part of canonical pipeline)
+_archive_gmm/
+Results/GMM/archive/
+
+# Canonical GMM result bundle: explicit override of the *.xlsx/*.json rules above
+!Results/GMM/final_product_level_models_20260916_114855/
+!Results/GMM/final_product_level_models_20260916_114855/**
