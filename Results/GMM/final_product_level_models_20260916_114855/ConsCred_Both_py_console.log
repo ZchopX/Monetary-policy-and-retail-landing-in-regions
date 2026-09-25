@@ -1,0 +1,24 @@
+Warning: system and difference GMMs do not work well on long (T>=N) panel data
+ Dynamic panel-data estimation, two-step difference GMM
+ Group variable: Region                           Number of obs = 6000     
+ Time variable: Date                              Min obs per group: 80    
+ Number of instruments = 14                       Max obs per group: 80    
+ Number of groups = 75                            Avg obs per group: 80.00 
++----------------------------+------------+---------------------+------------+-----------+-----+
+|     Int_Rate_ConsCred      |   coef.    | Corrected Std. Err. |     z      |   P>|z|   |     |
++----------------------------+------------+---------------------+------------+-----------+-----+
+|    L1.Int_Rate_ConsCred    | 0.6553283  |      0.0520882      | 12.5811271 | 0.0000000 | *** |
+|           Zakred           | -0.1753027 |      0.0274098      | -6.3956233 | 0.0000000 | *** |
+|          CPI_reg           | 0.1677094  |      0.0253348      | 6.6197372  | 0.0000000 | *** |
+|       Cap_to_assets        | -3.0667944 |      0.3216740      | -9.5338574 | 0.0000000 | *** |
+|         Mon_Shock          | -0.0876534 |      0.0155517      | -5.6362731 | 0.0000000 | *** |
+| Mon_Shock_Cluster_new_cd_1 | 0.1133751  |      0.0286419      | 3.9583672  | 0.0000755 | *** |
+| Mon_Shock_Cluster_new_cd_3 | -0.0869363 |      0.0248977      | -3.4917343 | 0.0004799 | *** |
+| Mon_Shock_Cluster_new_cd_4 | -0.0802432 |      0.0587249      | -1.3664248 | 0.1718057 |     |
+|     Conscred_MaP_Fact      | -0.3719994 |      0.0750902      | -4.9540354 | 0.0000007 | *** |
+| Conscred_MaP_Announcement  | -0.0446413 |      0.0752821      | -0.5929872 | 0.5531897 |     |
++----------------------------+------------+---------------------+------------+-----------+-----+
+Hansen test of overid. restrictions: chi(4) = 16.556 Prob > Chi2 = 0.002
+Arellano-Bond test for AR(1) in first differences: z = -1.92 Pr > z =0.055
+Arellano-Bond test for AR(2) in first differences: z = 0.98 Pr > z =0.325
+

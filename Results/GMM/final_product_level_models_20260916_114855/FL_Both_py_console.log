@@ -1,0 +1,24 @@
+Warning: system and difference GMMs do not work well on long (T>=N) panel data
+ Dynamic panel-data estimation, two-step difference GMM
+ Group variable: Region                           Number of obs = 6000     
+ Time variable: Date                              Min obs per group: 80    
+ Number of instruments = 14                       Max obs per group: 80    
+ Number of groups = 75                            Avg obs per group: 80.00 
++----------------------------+------------+---------------------+-------------+-----------+-----+
+|        Int_Rate_FL         |   coef.    | Corrected Std. Err. |      z      |   P>|z|   |     |
++----------------------------+------------+---------------------+-------------+-----------+-----+
+|       L1.Int_Rate_FL       | 0.6208564  |      0.0196318      |  31.6250518 | 0.0000000 | *** |
+|           Zakred           | -0.1032091 |      0.0066919      | -15.4229511 | 0.0000000 | *** |
+|          CPI_reg           | 0.2319180  |      0.0136855      |  16.9462993 | 0.0000000 | *** |
+|       Cap_to_assets        | -1.2196549 |      0.1493968      |  -8.1638619 | 0.0000000 | *** |
+|         Mon_Shock          | -0.1480410 |      0.0141898      | -10.4329210 | 0.0000000 | *** |
+| Mon_Shock_Cluster_new_cd_1 | 0.0695416  |      0.0250757      |  2.7732664  | 0.0055497 |  ** |
+| Mon_Shock_Cluster_new_cd_3 | -0.0556645 |      0.0431204      |  -1.2909099 | 0.1967349 |     |
+| Mon_Shock_Cluster_new_cd_4 | -0.0097206 |      0.0483665      |  -0.2009777 | 0.8407160 |     |
+|          MaP_Fact          | 0.5744506  |      0.0445182      |  12.9037119 | 0.0000000 | *** |
+|      MaP_Announcement      | -0.2050488 |      0.0413462      |  -4.9593189 | 0.0000007 | *** |
++----------------------------+------------+---------------------+-------------+-----------+-----+
+Hansen test of overid. restrictions: chi(4) = 62.033 Prob > Chi2 = 0.000
+Arellano-Bond test for AR(1) in first differences: z = -7.07 Pr > z =0.000
+Arellano-Bond test for AR(2) in first differences: z = 0.82 Pr > z =0.410
+

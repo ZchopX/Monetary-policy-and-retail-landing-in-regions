@@ -1,0 +1,23 @@
+Warning: system and difference GMMs do not work well on long (T>=N) panel data
+ Dynamic panel-data estimation, two-step difference GMM
+ Group variable: Region                           Number of obs = 6000     
+ Time variable: Date                              Min obs per group: 80    
+ Number of instruments = 13                       Max obs per group: 80    
+ Number of groups = 75                            Avg obs per group: 80.00 
++----------------------------+------------+---------------------+-------------+-----------+-----+
+|        Int_Rate_FL         |   coef.    | Corrected Std. Err. |      z      |   P>|z|   |     |
++----------------------------+------------+---------------------+-------------+-----------+-----+
+|       L1.Int_Rate_FL       | 0.6354741  |      0.0182849      |  34.7540213 | 0.0000000 | *** |
+|           Zakred           | -0.0873849 |      0.0065796      | -13.2812820 | 0.0000000 | *** |
+|          CPI_reg           | 0.2053597  |      0.0114651      |  17.9117685 | 0.0000000 | *** |
+|       Cap_to_assets        | -1.1049952 |      0.1292155      |  -8.5515677 | 0.0000000 | *** |
+|         Mon_Shock          | -0.1551001 |      0.0140953      | -11.0037020 | 0.0000000 | *** |
+| Mon_Shock_Cluster_new_cd_1 | 0.0733858  |      0.0244350      |  3.0033030  | 0.0026707 |  ** |
+| Mon_Shock_Cluster_new_cd_3 | -0.0628073 |      0.0389525      |  -1.6124065 | 0.1068735 |     |
+| Mon_Shock_Cluster_new_cd_4 | 0.0173040  |      0.0468455      |  0.3693848  | 0.7118410 |     |
+|      MaP_Announcement      | -0.3981675 |      0.0464995      |  -8.5628424 | 0.0000000 | *** |
++----------------------------+------------+---------------------+-------------+-----------+-----+
+Hansen test of overid. restrictions: chi(4) = 55.755 Prob > Chi2 = 0.000
+Arellano-Bond test for AR(1) in first differences: z = -7.56 Pr > z =0.000
+Arellano-Bond test for AR(2) in first differences: z = 3.07 Pr > z =0.002
+
